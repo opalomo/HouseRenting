@@ -13,6 +13,9 @@ const routes: Routes = [
   },
   {
     path: 'user/register', component: RegisterComponent
+  },
+  {
+    path: '**', component: HomeComponent
   }
 ];
 

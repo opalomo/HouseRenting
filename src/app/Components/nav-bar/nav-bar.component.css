@@ -22,6 +22,15 @@ width: 15%;
   padding: 8px;
   width: 100px;
   border-radius: 10px;
+  opacity: 0.8;
+}
+
+.customBtn:hover {
+
+  opacity: 1;
+  transition: 0.3s;
+  background-color: orangered;
+
 }
 
 

@@ -1,0 +1,27 @@
+.myContainer {
+
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.empty{
+width: 15%;
+}
+
+.customBtn {
+  background-color: rgb(185, 53, 35);
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+

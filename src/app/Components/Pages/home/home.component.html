@@ -1,1 +1,9 @@
-<p>home works!</p>
+<div class="d-flex justify-content-center">
+  <ngb-carousel>
+    <ng-template ngbSlide *ngFor="let img of images">
+      <div class="picsum-img-wrapper">
+        <img [src]="img">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

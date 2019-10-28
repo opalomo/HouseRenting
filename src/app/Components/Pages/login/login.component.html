@@ -1,1 +1,33 @@
-<p>login works!</p>
+<!--
+El login va a ser una CARD de esas la cual voy a colocar en medio de la pantalla
+ para eso hay que meterlo en un div y con flexbox jugar para ubicarlo en el centro en ambos ejes
+
+ La idea es añadir un color que haga que el formulario resalte,  que lo ilumine por detras
+ a poder ser cuando cargue la pagina añadir alguna animacion de fading para que aparezca el formulario
+
+-->
+<div class="lonely">
+  <div class="card centered">
+    <div class="center">
+      <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+        <label>Email:</label><br />
+        <input type="email" formControlName="email">
+        <br />
+        <div *ngIf="loginForm.get('email').hasError('required') && loginForm.get('email').touched">
+          <label>Please fill the gap with your email</label>
+        </div>
+        <div *ngIf="loginForm.get('email').hasError('email')">
+          <label>Please insert a valid email</label>
+        </div>
+        <label>Password:</label><br />
+        <input type="password" formControlName="password">
+        <br />
+        <div>
+          <br />
+          <button class="myBtn submitBtn" type="submit" [disabled]="loginForm.invalid">Login</button>
+          <button class="myBtn cancelBtn" type="button" [routerLink]="['/']" routerLinkActive="router-link-active" >Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

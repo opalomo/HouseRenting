@@ -1,0 +1,60 @@
+.lonely {
+
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5% 0;
+  justify-content: center;
+
+}
+
+.card.centered{
+  padding: 10% 0;
+  width: 400px;
+  height: 500px;
+  background-color:rgb(185, 53, 35);
+  border:none;
+  opacity: .7;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgb(185, 53, 35);
+}
+
+
+.center{
+  display: flex;
+  justify-content: center;
+
+}
+
+.myBtn {
+  border-radius: 20px;
+  border:none;
+  width: 80px;
+}
+
+.myBtn.cancelBtn {
+  background-color: red;
+  opacity: 0.4;
+  color: white;
+  margin: 3px;
+}
+
+.myBtn.submitBtn {
+  color: white;
+  background-color: darkgreen;
+  opacity: 0.4;
+  margin: 3px;
+}
+
+
+.myBtn.myBtn.cancelBtn:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.myBtn.myBtn.submitBtn:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
